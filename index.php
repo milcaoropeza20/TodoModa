@@ -19,7 +19,7 @@
                         </li>
                     </ul>
                 </div>
-                <a href="opcLogin.php" ><button type="button" class="btn btn-outline-primary me-2">Iniciar sesión</button></a>
+                <a href="Login.php" ><button type="button" class="btn btn-outline-primary me-2">Iniciar sesión</button></a>
                 <a href="signin.php" ><button type="button" class="btn btn-primary">Crear cuenta</button></a>
             </div>
         </nav>
