@@ -53,15 +53,15 @@
                                 <td> <?php echo $row['detalles'] ?> </td>
                                 <td> 
                                 &nbsp;
-                                <a href="borrarcategoria.php?id=<?php echo $row['id_categoria']?>" class="btn btn-danger">
+                                <a href="Aborrarcategoria.php?id=<?php echo $row['id_categoria']?>" class="btn btn-danger">
                                 <i class="bi bi-trash"></i>
                                 </a>
                                 &nbsp; 
-                                <a href="editarcategoria.php?id=<?php echo $row['id_categoria']?>" class="btn btn-primary">
+                                <a href="Aeditarcategoria.php?id=<?php echo $row['id_categoria']?>" class="btn btn-primary">
                                     <i class="bi bi-pencil"></i>                                
                                 </a>
                                 &nbsp;
-                                <a  href="vercategoria.php?id=<?php echo $row['id_categoria']?>" class="btn btn-secondary">
+                                <a  href="Avercategoria.php?id=<?php echo $row['id_categoria']?>" class="btn btn-secondary">
                                     <i class="bi bi-eye"></i>
                                 </a>
                                 </td>
