@@ -8,10 +8,10 @@
     <br><br>
     <h1>Detalles de venta</h1><br>
     <div class ="row">
-        <div class ="col-md-8">
+        <div class ="col">
 
             <table class ="table table-bordered">
-                <thead>
+                <thead class= "bg-azulf" style="color:white;">
                 <tr>
                     <th> ID </th>
                     <th> Folio </th>
