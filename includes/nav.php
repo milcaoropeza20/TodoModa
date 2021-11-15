@@ -31,6 +31,9 @@ include('session\valuesession.php');
                             <a href="Astock.php" class="nav-link" aria-current="page">Ver stock</a>
                         </li>
                         <li>
+                            <a href="Acliente.php" class="nav-link" aria-current="page">Visualización de clientes</a>
+                        </li>
+                        <li>
                             <a href="session\logout.php" class="nav-link" aria-current="page">Cerrar Sesion</a>
                         </li>
                     </ul>
