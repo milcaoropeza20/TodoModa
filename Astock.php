@@ -8,13 +8,13 @@
     <br><br>
     <h1>Stock</h1><br>
     <div class ="row">
-        <div class ="col-md-8">
+        <div class ="col">
 
             <table class ="table table-bordered">
-                <thead>
+                <thead class= "bg-azulf" style="color:white;">
                 <tr>
-                    <th> ID </th>
                     <th> ID prenda </th>
+                    <th> Nombre </th>
                     <th> Cantidad stock </th>
                     <th> Acciones </th>
                 </tr>
@@ -22,27 +22,21 @@
                 <tbody>
                     <?php
                     /* Seleccionamos todos los datos de la tabla producto a traves de la consulta select*/
-                        $query ="SELECT *FROM stock";
+                        $query ="SELECT *FROM stock,prenda where stock.id_prenda = prenda.id_prenda";
                     /*Generamos una variable donde le mandamos la conecion extablecida y la consulta devolviendo todas los productos guardados*/
                         $resultado_productos = mysqli_query($conex,$query);
                     /* Para poder mostrar los datos nos apoyamos de while para ir recorriendo estos datos y poderlos mostrar */
                         while($row = mysqli_fetch_assoc($resultado_productos)){ ?>
                             <tr>
-                                <td> <?php echo $row['numero'] ?> </td>
                                 <td> <?php echo $row['id_prenda'] ?> </td>
+                                <td> <?php echo $row['nombre'] ?> </td>
                                 <td> <?php echo $row['cantidad_stock'] ?> </td>
                                 <td> 
                                 &nbsp;
-                                <a href="borrarcategoria.php?id=<?php echo $row['id']?>" class="btn btn-danger">
-                                <i class="bi bi-trash"></i>
-                                </a>
-                                &nbsp; 
-                                <a href="editarcategoria.php?id=<?php echo $row['id']?>" class="btn btn-primary">
-                                    <i class="bi bi-pencil"></i>                                
-                                </a>
-                                &nbsp;
-                                <a  href="vercategoria.php?id=<?php echo $row['id']?>" class="btn btn-secondary">
-                                    <i class="bi bi-eye"></i>
+                                <a href="entradas.php?id=<?php echo $row['id_prenda']?>" class="btn btn-success">
+                                <i class="bi bi-plus"></i> </a>&nbsp;
+                                <a href="salidas.php?id=<?php echo $row['id_prenda']?>" class="btn btn-success">
+                                <i class="bi bi-dash"></i> </a>
                                 </a>
                                 </td>
                             </tr>
