@@ -23,7 +23,7 @@
                     <div class="d-grid">
                         <div class ="alert" style="color:black"><?php echo isset($alert) ? $alert:''; ?></div>
                     </div>
-                    <input type="submit" class ="btn btn-success btn-block bg-azulf" name ="guardar" value ="Guardar">
+                    <input type="submit" class ="btn btn-danger rounded-3 my-4" name ="guardar" value ="Guardar">
                 </form>
             </div>
         </div>
