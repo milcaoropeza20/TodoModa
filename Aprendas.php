@@ -52,7 +52,7 @@
                     <div class="d-grid">
                         <div class ="alert" style="color:black"><?php echo isset($alert) ? $alert:''; ?></div>
                     </div>
-                    <input type="submit" class ="btn btn-success btn-block bg-azulf" name ="guardar" value ="Guardar">
+                    <input type="submit"  name ="guardar" value ="Guardar" class="btn btn-danger rounded-3 my-4" >
                 </form>
             </div>
         </div>
@@ -60,7 +60,7 @@
         <div class ="col-md-8">
 
             <table class ="table table-bordered">
-                <thead>
+                <thead class= "bg-azulf" style="color:white;">
                 <tr>
                     <th> ID </th>
                     <th> Marca </th>
@@ -89,18 +89,15 @@
                                 <i class="bi bi-trash"></i>
                                 </a>
                                 &nbsp; 
-                                <a href="editarPrenda.php?id=<?php echo $row['id_prenda']?>" class="btn btn-primary">
+                                <a href="AeditarPrenda.php?id=<?php echo $row['id_prenda']?>" class="btn btn-primary">
                                     <i class="bi bi-pencil"></i>                                
                                 </a>
                                 &nbsp;
-                                <a  href="verPrenda.php?id=<?php echo $row['id_prenda']?>" class="btn btn-secondary">
+                                <a  href="AverPrenda.php?id=<?php echo $row['id_prenda']?>" class="btn btn-secondary">
                                     <i class="bi bi-eye"></i>
                                 </a>
                                 &nbsp;
-                                <a href="entrada.php?id=<?php echo $row['id_prenda']?>" class="btn btn-success">
-                                <i class="bi bi-plus"></i> </a>&nbsp;
-                                <a href="salida.php?id=<?php echo $row['id_prenda']?>" class="btn btn-success">
-                                <i class="bi bi-dash"></i> </a>
+
                                 </td>
                             </tr>
                                 
@@ -115,3 +112,4 @@
 </div>
 
 <?php include("includes/footer.php") ?>
+
