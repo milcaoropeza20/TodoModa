@@ -19,7 +19,7 @@
         <br><br>
         <div class="container text-center px-5 my-5 ">
         <form>
-            <h1 class="h1 pt-2 pt-4">Inicio de sesión</h1>
+            <h1 class="h1 pt-2 pt-4">   Inicio de sesión  </h1>
             <small class="text-muted">Ingrese sus datos en los siguientes campos para acceder a tu carrito</small>
             <div class="form-floating my-3">
                 <input type="text" class="form-control" id="inputEmail" name ="correo" placeholder="Correo electronico" required="" autofocus>
